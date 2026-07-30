@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Medicine Residency Programs - Initial Accreditation 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f4f8;
+            padding: 30px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 1400px;
+            width: 100%;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            padding: 25px;
+            overflow-x: auto;
+        }
+        h1 {
+            font-size: 24px;
+            color: #1a2a4a;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .badge {
+            background: #2d6a4f;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 4px 16px;
+            border-radius: 30px;
+            letter-spacing: 0.3px;
+        }
+        .subtitle {
+            color: #5a6e85;
+            font-size: 15px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e9edf2;
+            padding-bottom: 14px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            min-width: 900px;
+        }
+        thead {
+            background: #1a2a4a;
+            color: white;
+        }
+        thead th {
+            padding: 14px 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        thead th:first-child {
+            border-radius: 6px 0 0 0;
+        }
+        thead th:last-child {
+            border-radius: 0 6px 0 0;
+        }
+        tbody tr {
+            border-bottom: 1px solid #e9edf2;
+            transition: background 0.15s ease;
+        }
+        tbody tr:hover {
+            background: #f7f9fc;
+        }
+        tbody td {
+            padding: 12px 12px;
+            vertical-align: middle;
+            color: #1e2d47;
+            line-height: 1.4;
+        }
+        tbody td:first-child {
+            font-weight: 600;
+            color: #0d1b33;
+            font-size: 13px;
+            white-space: nowrap;
+        }
+        tbody td:nth-child(2) {
+            font-weight: 500;
+            color: #0a1a30;
+        }
+        .program-code {
+            font-family: 'Courier New', monospace;
+            background: #eef2f7;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #1a3a6a;
+            display: inline-block;
+        }
+        .director {
+            font-weight: 500;
+            color: #1a2a4a;
+        }
+        .director-credentials {
+            font-weight: 400;
+            color: #5a6e85;
+            font-size: 13px;
+        }
+        .status-badge {
+            display: inline-block;
+            background: #d4edda;
+            color: #0e5e2e;
+            padding: 3px 14px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 12px;
+            letter-spacing: 0.3px;
+            white-space: nowrap;
+        }
+        .date {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            font-weight: 500;
+            color: #1a3a6a;
+            white-space: nowrap;
+        }
+        .specialty {
+            font-weight: 500;
+            color: #1a3a6a;
+        }
+        .state {
+            font-weight: 500;
+            color: #2d4a6a;
+        }
+        .footer {
+            margin-top: 18px;
+            padding-top: 14px;
+            border-top: 2px solid #e9edf2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            color: #4a5e75;
+            font-size: 14px;
+        }
+        .total {
+            background: #1a2a4a;
+            color: white;
+            padding: 5px 18px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            .container { padding: 12px; }
+            table { font-size: 12px; min-width: 700px; }
+            thead th, tbody td { padding: 8px 8px; }
+            h1 { font-size: 19px; }
+        }
+        @media print {
+            body { background: white; padding: 10px; }
+            .container { box-shadow: none; border: 1px solid #ccc; }
+            tbody tr:hover { background: transparent; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            🏥 Internal Medicine Residency Programs
+            <span class="badge">Initial Accreditation 2025</span>
+        </h1>
+        <div class="subtitle">
+            Newly accredited programs &bull; Effective June–August 2025 &bull; 21 programs total
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Program Code</th>
+                    <th>Program Name</th>
+                    <th>Program Director</th>
+                    <th>Accreditation Status</th>
+                    <th>Effective Date</th>
+                    <th>Specialty</th>
+                    <th>State</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="program-code">140190001</span></td>
+                    <td>University of California Irvine Health School of Medicine Program</td>
+                    <td><span class="director">Maria Bravay</span><span class="director-credentials">, MD</span></td>
+                    <td><span class="status-badge">Initial Accreditation</span></td>
+                    <td><span class="date">06/13/2025</span></td>
+                    <td><span class="specialty">Internal Medicine</span></td>
+                    <td><span class="state">California</span></td>
+                </tr>
+                <tr>
+                    <td><span class="program-code">1409120001</span></td>
+                    <td>Hackensack Meridian JFK University Medical Center Program</td>
+                    <td><span class="director">Susan M. Moshier</span><span class="director-credentials">, MD</span></td>
+                    <td><span class="status-badge">Initial Accreditation</span></td>
+                    <td><span class="date">08/13/2025</span></td>
+                    <td><span class="specialty">Internal Medicine</span></td>
+                    <td><span class="state">Florida</span></td>
+                </tr>
+                <tr>
+                    <td><span class="program-code">1401200001</span></td>
+                    <td>HCA Healthcare Swedish Hospital Program</td>
+                    <td><span class="director">Austin L. Vassallo</span><span class="director-credentials">, DO</span></td>
+                    <td><span class="status-badge">Initial Accreditation</span></td>
+                    <td><span class="date">06/13/2025</span></td>
+                    <td><span class="specialty">Internal Medicine</span></td>
+                    <td><span class="state">Florida</span></td>
+                </tr>
+                <tr>
+                    <td><span class="program-code">1401300001</span></td>
+                    <td>Carl Vinson Medical Center (MTR) Program</td>
+                    <td><span class="director">Lisa C. Perrone</span><span class="director-credentials">, MD</span></td>
+                    <td><span class="status-badge">Initial Accreditation</span></td>
+                    <td><span class="date">06/13/2025</span></td>
+                    <td><span class="specialty">Internal Medicine</span></td>
+                    <td><span class="state">Georgia</span></td>
+                </tr>
+                <tr>
+                    <td><span class="program-code">1401400000</span></td>
+                    <td>Tift Regional Health System Program</td>
+                    <td><span class="director">Carmen O. Tingle</span><span class="director-credentials">, MD</span></td>
+                    <td><span class="status-badge">Initial Accreditation</span></td>
+                    <td><span class="date">06/13/2025</span></td>
+                    <td><span class="specialty">Internal Medicine</span></td>
+                    <td><span class="state">Georgia</span></td>
+                </tr>
+                <tr>
+                    <td><span class="program-code">1401500000</span></td>
+                    <td>Phoebe Health System Program</td>
+                    <td><span class="director">John COTILLA</span><span class="director-credentials">, MD</span></td>
+                    <td><span class="status-badge">Initial Accreditation</span></td>
+                    <td><span class="date">06/13/2025</span></td>
+                    <td><span class="specialty">Internal Medicine</span></td>
+                    <td><span class="state">Georgia</span></td>
+                </tr>
+                <tr>
+                    <td><span class="program-code">1401600000</span></td>
+                    <td>Cabell Huntington Hospital Program</td>
+                    <td><span class="director">Myra Kliger</span><span class="director-credentials">, MD, MBA, MEd</span></td>
+                    <td><span class="status-badge">Initial Accreditation</span></td>
+                    <td><span class="date">06/13/2025</span></td>
+                    <td><span class="specialty">Internal Medicine</span></td>
+                    <td><span class="state">West Virginia</span></td>
+                </tr>
+                <tr>
+                    <td><span class="program-code">1401700001</span></td>
+                    <td>Colquitt Regional Medical Center Program</td>
+                    <td><span class="director">Arshad Zafar</span><span class="director-credentials">, MD</span></td>
+                    <td><span class="status-badge">Initial Accreditation</span></td>
+                    <td><span class="date">06/13/2025</span></td>
+                    <td><span class="specialty">Internal Medicine</span></td>
+                    <td><span class="state">Georgia</span></td>
+                </tr>
+                <tr>
+                    <td><span class="program-code">1401800000</span></td>
+                    <td>Betsy Johnson Hospital Program</td>
+                    <td><span class="director">Moni B. Abraham</span><span class="director-credentials">, MBBS</span></td>
+                    <td><span class="status-badge">Initial Accreditation</span></td>
+                    <td><span class="date">06/13/2025</span></td>
+                    <td><span class="specialty">Internal Medicine</span></td>
+                    <td><span class="state">New Jersey</span></td>
+                </tr>
+                <tr>
+                    <td><span class="program-code">1401900001</span></td>
+                    <td>New York Medical College Metropolitan Center Program</td>
+                    <td><span class="director">Rafael Sultan</span><span class="director-credentials">, MD</span></td>
+                    <td><span class="status-badge">Initial Accreditation</span></td>
+                    <td><span class="date">06/13/2025</span></td>
+                    <td><span class="specialty">Internal Medicine</span></td>
+                    <td><span class="state">New York</span></td>
+                </tr>
+                <tr>
+                    <td><span class="program-code">1402000000</span></td>
+                    <td>Camden Health System Program</td>
+                    <td><span class="director">Eric K. Foklen</span><span class="director-credentials">, DO</span></td>
+                    <td><span class="status-badge">Initial Accreditation</span></td>
+                    <td><span class="date">06/13/2025</span></td>
+                    <td><span class="specialty">Internal Medicine</span></td>
+                    <td><span class="state">New Mexico</span></td>
+                </tr>
+                <tr>
+                    <td><span class="program-code">1402100000</span></td>
+                    <td>Cabell Health Program</td>
+                    <td><span class="director">Riya Pankaj</span><span class="director-credentials">, MBBS</span></td>
+                    <td><span class="status-badge">Initial Accreditation</span></td>
+                    <td><span class="date">06/13/2025</span></td>
+                    <td><span class="specialty">Internal Medicine</span></td>
+                    <td><span class="state">West Virginia</span></td>
+                </tr>
+                <tr>
+                    <td><span class="program-code">1402200001</span></td>
+                    <td>Prisma Health Upstate/USC School of Medicine Program</td>
+                    <td><span class="director">Kendalle Wallace</span><span class="director-credentials">, MD</span></td>
+                    <td><span class="status-badge">Initial Accreditation</span></td>
+                    <td><span class="date">06/13/2025</span></td>
+                    <td><span class="specialty">Internal Medicine</span></td>
+                    <td><span class="state">South Carolina</span></td>
+                </tr>
+                <tr>
+                    <td><span class="program-code">1402300000</span></td>
+                    <td>Tennessee Tech University College of Osteopathic Medicine (TTU-COM) Program</td>
+                    <td><span class="director">Tariq M. Malik</span><span class="director-credentials">, DO</span></td>
+                    <td><span class="status-badge">Initial Accreditation</span></td>
+                    <td><span class="date">06/13/2025</span></td>
+                    <td><span class="specialty">Internal Medicine</span></td>
+                    <td><span class="state">Tennessee</span></td>
+                </tr>
+                <tr>
+                    <td><span class="program-code">1402400001</span></td>
+                    <td>UTHealth Houston McGovern Medical School Program</td>
+                    <td><span class="director">Mahnaz Kazemi</span><span class="director-credentials">, MD</span></td>
+                    <td><span class="status-badge">Initial Accreditation</span></td>
+                    <td><span class="date">06/13/2025</span></td>
+                    <td><span class="specialty">Internal Medicine</span></td>
+                    <td><span class="state">Texas</span></td>
+                </tr>
+                <tr>
+                    <td><span class="program-code">1402500000</span></td>
+                    <td>Driscoll's HealthCare Graduate Medical Education Program</td>
+                    <td><span class="director">Abhilash Jenu</span><span class="director-credentials">, MD</span></td>
+                    <td><span class="status-badge">Initial Accreditation</span></td>
+                    <td><span class="date">06/13/2025</span></td>
+                    <td><span class="specialty">Internal Medicine</span></td>
+                    <td><span class="state">Texas</span></td>
+                </tr>
+                <tr>
+                    <td><span class="program-code">1402600001</span></td>
+                    <td>Carilion Roanoke Memorial Hospital Program</td>
+                    <td><span class="director">Steven J. Sharf</span><span class="director-credentials">, MD</span></td>
+                    <td><span class="status-badge">Initial Accreditation</span></td>
+                    <td><span class="date">06/13/2025</span></td>
+                    <td><span class="specialty">Internal Medicine</span></td>
+                    <td><span class="state">Virginia</span></td>
+                </tr>
+                <tr>
+                    <td><span class="program-code">1402700000</span></td>
+                    <td>Sentara Health Program</td>
+                    <td><span class="director">Chad S. H. Mogen</span><span class="director-credentials">, MD</span></td>
+                    <td><span class="status-badge">Initial Accreditation</span></td>
+                    <td><span class="date">06/13/2025</span></td>
+                    <td><span class="specialty">Internal Medicine</span></td>
+                    <td><span class="state">Virginia</span></td>
+                </tr>
+                <tr>
+                    <td><span class="program-code">1402800001</span></td>
+                    <td>Trinity Health System Program</td>
+                    <td><span class="director">Stephen C. Gale</span><span class="director-credentials">, MD</span></td>
+                    <td><span class="status-badge">Initial Accreditation</span></td>
+                    <td><span class="date">06/13/2025</span></td>
+                    <td><span class="specialty">Internal Medicine</span></td>
+                    <td><span class="state">Virginia</span></td>
+                </tr>
+                <tr>
+                    <td><span class="program-code">1402900000</span></td>
+                    <td>MultiCare Health System Program</td>
+                    <td><span class="director">Matthew J. Huff</span><span class="director-credentials">, MD</span></td>
+                    <td><span class="status-badge">Initial Accreditation</span></td>
+                    <td><span class="date">06/13/2025</span></td>
+                    <td><span class="specialty">Internal Medicine</span></td>
+                    <td><span class="state">Washington</span></td>
+                </tr>
+                <tr>
+                    <td><span class="program-code">1403000000</span></td>
+                    <td>McLaren Greater Lansing/St. Joseph Mercy Health–McLaren Graduate Medical Education Consortium Program</td>
+                    <td><span class="director">Paul Beraj</span><span class="director-credentials">, MD, FACP</span></td>
+                    <td><span class="status-badge">Initial Accreditation</span></td>
+                    <td><span class="date">06/13/2025</span></td>
+                    <td><span class="specialty">Internal Medicine</span></td>
+                    <td><span class="state">Michigan</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="footer">
+            <span>📋 <strong>21</strong> newly accredited Internal Medicine residency programs</span>
+            <span class="total">Total: 21 Programs</span>
+        </div>
+    </div>
+</body>
+</html>
