@@ -1,0 +1,26 @@
+id,specialty,program_name,institution,city,state,region,accreditation_year,accreditation_date,accreditation_status,first_match_cycle,residency_start,program_type,hospital_beds,teaching_hospital,j1_sponsorship,h1b_sponsorship,img_friendly,ecfmg_required,usce_required,step2_requirement,website,freida_url,eras_url,program_director,coordinator,coordinator_email,notes,last_updated
+22,Family Medicine,St Francis Medical Center,St Francis Medical Center,Monroe,LA,,2026,2026-07-01,Initial Accreditation,,,Community,,0,,,,1,,,,,,,,,,2026-07-30 04:01:03.049044
+23,Family Medicine,Independence Health Butler Memorial,Independence Health,Pittsburgh,PA,,2026,2026-06-01,Initial Accreditation,,,Community,,0,,,,1,,,,,,,,,,2026-07-30 04:01:03.049044
+7,Internal Medicine,Flowers Hospital,Flowers Hospital,Dothan,AL,,2025,2025-05-01,Initial Accreditation,,,Community,,0,,,,1,,,,,,,,,,2026-07-30 04:01:03.049044
+3,Internal Medicine,Keck School of Medicine USC,University of Southern California,Los Angeles,CA,,2025,2025-04-01,Initial Accreditation,,,University,,0,,,,1,,,,,,,,,,2026-07-30 04:01:03.049044
+4,Internal Medicine,Prime West / St Francis,Prime Healthcare,Los Angeles,CA,,2025,2025-04-01,Initial Accreditation,,,Community,,0,,,,1,,,,,,,,,,2026-07-30 04:01:03.049044
+1,Internal Medicine,UC Irvine Medical Center,University of California Irvine,Orange,CA,,2025,2025-09-01,Initial Accreditation,,,University,,0,,,,1,,,,,,,,,,2026-07-30 04:01:03.049044
+2,Internal Medicine,United Health Centers,United Health Centers,Fresno,CA,,2025,2025-04-01,Initial Accreditation,,,Community,,0,,,,1,,,,,,,,,,2026-07-30 04:01:03.049044
+5,Internal Medicine,Health Education Services,Health Education Services,Florida,FL,,2025,2025-09-01,Initial Accreditation,,,Community,,0,,,,1,,,,,,,,,,2026-07-30 04:01:03.049044
+6,Internal Medicine,University of Central Florida HCA Florida,UCF/HCA Healthcare,Orlando,FL,,2025,2025-09-01,Initial Accreditation,,,University,,0,,,,1,,,,,,,,,,2026-07-30 04:01:03.049044
+8,Internal Medicine,Coffee Regional Medical Center,Coffee Regional Medical Center,Douglas,GA,,2025,2025-09-01,Initial Accreditation,,,Community,,0,,,,1,,,,,,,,,,2026-07-30 04:01:03.049044
+9,Internal Medicine,Tift Regional Health System,Tift Regional Health System,Tifton,GA,,2025,2025-09-01,Initial Accreditation,,,Community,,0,,,,1,,,,,,,,,,2026-07-30 04:01:03.049044
+10,Internal Medicine,Indiana University School of Medicine,Indiana University,Indianapolis,IN,,2025,2025-04-01,Initial Accreditation,,,University,,0,,,,1,,,,,,,,,,2026-07-30 04:01:03.049044
+11,Internal Medicine,South Central Regional Medical Center,South Central Regional Medical Center,Laurel,MS,,2025,2025-07-01,Initial Accreditation,,,Community,,0,,,,1,,,,,,,,,,2026-07-30 04:01:03.049044
+14,Internal Medicine,University of North Dakota School of Medicine,University of North Dakota,Grand Forks,ND,,2025,2025-04-01,Initial Accreditation,,,University,,0,,,,1,,,,,,,,,,2026-07-30 04:01:03.049044
+12,Internal Medicine,CarePoint Health,CarePoint Health,Newark,NJ,,2025,2025-07-01,Initial Accreditation,,,Community,,0,,,,1,,,,,,,,,,2026-07-30 04:01:03.049044
+13,Internal Medicine,NM Primary Care Training,New Mexico Primary Care Training,Albuquerque,NM,,2025,2025-09-01,Initial Accreditation,,,Community,,0,,,,1,,,,,,,,,,2026-07-30 04:01:03.049044
+15,Internal Medicine,Bon Secours Mercy St Elizabeth,Bon Secours Mercy Health,Youngstown,OH,,2025,2025-07-01,Initial Accreditation,,,Community,,0,,,,1,,,,,,,,,,2026-07-30 04:01:03.049044
+16,Internal Medicine,McLeod Regional Medical Center,McLeod Health,Florence,SC,,2025,2025-04-01,Initial Accreditation,,,Community,,0,,,,1,,,,,,,,,,2026-07-30 04:01:03.049044
+18,Internal Medicine,Prime South GME,Prime Healthcare,Texas,TX,,2025,2025-04-01,Initial Accreditation,,,Community,,0,,,,1,,,,,,,,,,2026-07-30 04:01:03.049044
+17,Internal Medicine,Shannon Medical Center,Shannon Health,San Angelo,TX,,2025,2025-04-01,Initial Accreditation,,,Community,,0,,,,1,,,,,,,,,,2026-07-30 04:01:03.049044
+19,Internal Medicine,Sentara Northern Virginia Medical Center,Sentara Health,Woodbridge,VA,,2026,2026-06-01,Initial Accreditation,,,Community,,0,,,,1,,,,,,,,,,2026-07-30 04:01:03.049044
+20,Internal Medicine,Valley Health Winchester,Valley Health,Winchester,VA,,2026,2026-07-01,Initial Accreditation,,,Community,,0,,,,1,,,,,,,,,,2026-07-30 04:01:03.049044
+21,Internal Medicine,Medical College of Wisconsin / ThedaCare,MCW/ThedaCare,Appleton,WI,,2025,2025-09-01,Initial Accreditation,,,University,,0,,,,1,,,,,,,,,,2026-07-30 04:01:03.049044
+24,Pediatrics,Kings County Hospital Center,Kings County Hospital,Brooklyn,NY,,2025,2025-07-01,Initial Accreditation,,,Community,,0,,,,1,,,,,,,,,,2026-07-30 04:01:03.049044
+25,Pediatrics,Driscoll Children's Hospital Rio Grande Valley,Driscoll Children's Hospital,Edinburg,TX,,2026,2026-07-01,Initial Accreditation,,,Community,,0,,,,1,,,,,,,,,,2026-07-30 04:01:03.049044

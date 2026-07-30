@@ -1,0 +1,5 @@
+specialty,program_name,state,j1_sponsorship,h1b_sponsorship,img_friendly,hospital_beds,program_director,coordinator_email
+Internal Medicine,UC Irvine Medical Center,CA,Yes,No,High,411,Dr Example,example@uci.edu
+Internal Medicine,Flowers Hospital,AL,Yes,Unknown,Medium,235,Dr Example,contact@example.com
+Family Medicine,Sutter Health Rural,CA,Yes,No,High,300,Dr Example,contact@example.com
+Pediatrics,Kings County Hospital Center,NY,Yes,No,High,627,Dr Example,contact@example.com

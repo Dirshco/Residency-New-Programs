@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+Newly Accredited Residency Programs 2025-2026
+</title>
+
+
+<style>
+
+body {
+
+    font-family:
+    Arial, Helvetica, sans-serif;
+
+    margin:0;
+
+    background:#f5f7fb;
+
+    color:#222;
+
+}
+
+
+header {
+
+    background:#0b3d91;
+
+    color:white;
+
+    padding:30px;
+
+    text-align:center;
+
+}
+
+
+header h1 {
+
+    margin:0;
+
+    font-size:32px;
+
+}
+
+
+header p {
+
+    margin-top:10px;
+
+}
+
+
+
+.container {
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:20px;
+
+}
+
+
+
+.filters {
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    box-shadow:
+    0 2px 8px rgba(0,0,0,.1);
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(200px,1fr));
+
+    gap:15px;
+
+}
+
+
+
+input,select {
+
+    padding:12px;
+
+    border-radius:8px;
+
+    border:1px solid #ccc;
+
+    width:100%;
+
+}
+
+
+
+.card {
+
+    background:white;
+
+    margin-top:20px;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    box-shadow:
+    0 2px 8px rgba(0,0,0,.1);
+
+}
+
+
+
+.card h3 {
+
+    color:#0b3d91;
+
+    margin-top:0;
+
+}
+
+
+
+.badge {
+
+    display:inline-block;
+
+    padding:5px 10px;
+
+    margin:3px;
+
+    border-radius:20px;
+
+    background:#e8eefc;
+
+    font-size:13px;
+
+}
+
+
+
+.score {
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    color:green;
+
+}
+
+
+
+table {
+
+    width:100%;
+
+}
+
+
+
+footer {
+
+    text-align:center;
+
+    padding:20px;
+
+    color:#666;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>
+IMG Residency Finder
+</h1>
+
+<p>
+Newly Accredited Internal Medicine, Family Medicine,
+and Pediatrics Programs (2025-2026)
+</p>
+
+</header>
+
+
+
+<div class="container">
+
+
+<div class="filters">
+
+
+<input
+id="search"
+placeholder="Search program or institution..."
+>
+
+
+<select id="specialty">
+
+<option value="">
+All Specialties
+</option>
+
+<option>
+Internal Medicine
+</option>
+
+<option>
+Family Medicine
+</option>
+
+<option>
+Pediatrics
+</option>
+
+</select>
+
+
+
+<select id="year">
+
+<option value="">
+All Years
+</option>
+
+<option>
+2025
+</option>
+
+<option>
+2026
+</option>
+
+</select>
+
+
+
+<select id="state">
+
+<option value="">
+All States
+</option>
+
+</select>
+
+
+</div>
+
+
+
+<div id="results">
+
+</div>
+
+
+</div>
+
+
+
+<footer>
+
+Data source:
+ACGME + Program Information
+
+<br>
+
+Built for IMG Residency Research
+
+</footer>
+
+
+
+
+
+<script>
+
+
+let programs=[];
+
+
+
+async function loadPrograms(){
+
+
+try {
+
+
+let response =
+await fetch(
+"data/programs.json"
+);
+
+
+programs =
+await response.json();
+
+
+
+populateStates();
+
+
+displayPrograms(programs);
+
+
+
+}
+
+catch(error){
+
+
+document.getElementById(
+"results"
+).innerHTML =
+
+"<p>Unable to load programs.json</p>";
+
+}
+
+
+
+}
+
+
+
+
+function populateStates(){
+
+
+let states =
+[
+...new Set(
+programs.map(
+p=>p.state
+)
+)
+]
+.sort();
+
+
+
+let select =
+document.getElementById(
+"state"
+);
+
+
+
+states.forEach(
+state=>{
+
+
+let option =
+document.createElement(
+"option"
+);
+
+
+option.value=state;
+
+option.textContent=state;
+
+
+select.appendChild(option);
+
+
+});
+
+
+}
+
+
+
+
+
+function displayPrograms(data){
+
+
+let container =
+document.getElementById(
+"results"
+);
+
+
+
+container.innerHTML="";
+
+
+
+if(data.length===0){
+
+
+container.innerHTML =
+"<p>No programs found.</p>";
+
+return;
+
+}
+
+
+
+data.forEach(
+p=>{
+
+
+let card =
+document.createElement(
+"div"
+);
+
+
+card.className="card";
+
+
+
+card.innerHTML = `
+
+
+<h3>
+${p.program_name}
+</h3>
+
+
+<p>
+
+<strong>
+Specialty:
+</strong>
+${p.specialty}
+
+</p>
+
+
+<p>
+
+<strong>
+Institution:
+</strong>
+${p.institution}
+
+</p>
+
+
+<p>
+
+<strong>
+Location:
+</strong>
+
+${p.city || ""}
+${p.state}
+
+</p>
+
+
+
+<p>
+
+<strong>
+Initial Accreditation:
+</strong>
+
+${p.accreditation_year}
+
+</p>
+
+
+
+<div>
+
+
+<span class="badge">
+
+${p.program_type || "Unknown"}
+
+</span>
+
+
+<span class="badge">
+
+${p.accreditation_status || ""}
+
+</span>
+
+
+
+</div>
+
+
+
+<br>
+
+<!-- /*
+
+<p>
+
+<strong>
+IMG Information
+</strong>
+
+</p>
+
+
+
+<p>
+
+J-1:
+${p.j1_sponsorship || "Unknown"}
+
+<br>
+
+
+H-1B:
+${p.h1b_sponsorship || "Unknown"}
+
+<br>
+
+
+ERAS:
+${p.eras_participation || "Unknown"}
+
+</p>
+
+
+<p class="score" hide="true">
+
+IMG Score:
+${p.img_score || "Not calculated"}
+
+</p>
+*/ -->
+
+
+`;
+
+
+
+container.appendChild(card);
+
+
+
+});
+
+
+}
+
+
+
+
+
+
+function filterPrograms(){
+
+
+let search =
+document.getElementById(
+"search"
+).value.toLowerCase();
+
+
+
+let specialty =
+document.getElementById(
+"specialty"
+).value;
+
+
+
+let year =
+document.getElementById(
+"year"
+).value;
+
+
+
+let state =
+document.getElementById(
+"state"
+).value;
+
+
+
+let filtered =
+programs.filter(
+p=>{
+
+
+return (
+
+(p.program_name || "")
+.toLowerCase()
+.includes(search)
+
+
+&&
+
+(!specialty ||
+p.specialty===specialty)
+
+
+&&
+
+(!year ||
+String(
+p.accreditation_year
+)===year)
+
+
+
+&&
+
+(!state ||
+p.state===state)
+
+
+);
+
+
+});
+
+
+
+displayPrograms(filtered);
+
+
+
+}
+
+
+
+
+document
+.getElementById("search")
+.addEventListener(
+"input",
+filterPrograms
+);
+
+
+
+document
+.getElementById("specialty")
+.addEventListener(
+"change",
+filterPrograms
+);
+
+
+
+document
+.getElementById("year")
+.addEventListener(
+"change",
+filterPrograms
+);
+
+
+
+document
+.getElementById("state")
+.addEventListener(
+"change",
+filterPrograms
+);
+
+
+
+loadPrograms();
+
+
+</script>
+
+
+</body>
+
+</html>
